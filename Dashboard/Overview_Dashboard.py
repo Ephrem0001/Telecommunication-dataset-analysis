@@ -280,6 +280,7 @@ def visualize_and_cluster_data(df):
 
 
 st.title("User Overview Dashboard")
+st.subheader("download and uplode it 👇")
 uploaded_file = st.file_uploader("https://docs.google.com/spreadsheets/d/e/2PACX-1vRRhL-TLOPGWO7T450wnFpXzmX0_rQPBg1eIcggit1XGpc4dWekJz1B00xUYaUIjGH-FSVTSsdupALv/pub?output=csv", type="csv")
 
 if uploaded_file:
@@ -303,5 +304,6 @@ else:
 st.title("User_Experience Dashboard")
 
 st.sidebar.header("Dashboard")
+st.subheader("download and uplode it 👇")
 uploaded_files = st.file_uploader("https://docs.google.com/spreadsheets/d/e/2PACX-1vTrZZ1sBTwmSH69C6KLzTPpAsoeRPwNuX-9mbhNKsVLuw1zKNweWfizBMSOFLmx8S17aLxnFi0Fg3KT/pub?output=csv", type="csv")
 main(uploaded_files)
